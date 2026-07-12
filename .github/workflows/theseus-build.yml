@@ -1,4 +1,7 @@
 name: Modrinth App build
+jobs:
+  build:
+    runs-on: windows-latest
 on:
   push:
     branches:
