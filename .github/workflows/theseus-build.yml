@@ -164,7 +164,7 @@ jobs:
         if: contains(matrix.platform, 'macos')
 
       - name: Build Windows app
-        run: pnpm --filter=@modrinth/app run tauri build --config tauri-release.conf.json --verbose --bundles "nsis,updater"
+        run: pnpm --filter=@modrinth/app run tauri build --config tauri-release.conf.json --verbose --bundles "nsis"
 
       - name: Upload app bundles
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
